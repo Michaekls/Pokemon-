@@ -27,7 +27,7 @@ void Pokemon_wodny::Atack2(Pokemon *poke)
     }
     else if(poke->getTyp()=="roslinny")
     {
-        poke->zmienŻycie(this->getAtak()-20);
+        poke->zmienŻycie(this->getAtak());
     }
     else
     {

@@ -28,7 +28,7 @@ void Pokemon_ognisty::Atack2(Pokemon* poke)
     }
     else if(poke->getTyp()=="wodny")
     {
-        poke->zmienŻycie(this->getAtak()-20);
+        poke->zmienŻycie(this->getAtak());
     }
     else
     {

@@ -28,7 +28,7 @@ void Pokemon_roslinny::Atack2(Pokemon *poke)
     }
     else if(poke->getTyp()=="ognisty")
     {
-        poke->zmienŻycie(this->getAtak()-20);
+        poke->zmienŻycie(this->getAtak());
     }
     else
     {
