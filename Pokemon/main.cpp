@@ -465,12 +465,24 @@ void game()
             if(plecak->getIlosc_pokemonow()>=5)
             {
                 std::cout << "\n\nGratlacje wygrales!!!!" << std::endl;
+                delete poke1;
+                for (Pokemon* pok : przeciwnik)
+                {
+                    delete pok;
+                }
+                przeciwnik.clear();
                 system("PAUSE");
                 break;
             }
             else
             {
                 std::cout << "\n\nPrzegrales :(" << std::endl;
+                delete poke1;
+                for (Pokemon* pok : przeciwnik)
+                {
+                    delete pok;
+                }
+                przeciwnik.clear();
                 system("PAUSE");
                 break;
             }
@@ -483,6 +495,12 @@ void game()
             if(wynik==0)
             {
                 std::cout << "przegrales, koniec gry" << std::endl;
+                delete poke1;
+                for (Pokemon* pok : przeciwnik)
+                {
+                    delete pok;
+                }
+                przeciwnik.clear();
                 break;
             }
             else if( wynik == 1)
@@ -536,5 +554,6 @@ int main()
     game();
     std::cout << "koniec gry" << std::endl;
     system("PAUSE");
+
     return 1;
 }
